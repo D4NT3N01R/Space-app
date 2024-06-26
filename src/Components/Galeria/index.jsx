@@ -1,8 +1,8 @@
 import styled from "styled-components"
-import Titulo from "../Titulo"
 import Populares from "./Populares"
 import Tag from "./tags"
 import Imagen from "./imagen"
+import StyledTitulo from "../Titulo"
 
 const GaleriaContainer = styled.div`
 display: flex;
@@ -27,7 +27,7 @@ const Galeria = ({ fotos = [], alSeleccionarFoto, alAlternarFavorito }) => {
             <Tag />
             <GaleriaContainer>
                 <SeccionFluida>
-                    <Titulo>Navegue por la galería</Titulo>
+                    <StyledTitulo>Navegue por la galería</StyledTitulo>
                     <ImagenesContainer>
                         {fotos.map(foto => <Imagen
                         alAlternarFavorito ={alAlternarFavorito}
